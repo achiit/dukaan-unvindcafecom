@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unvind Cafe | Premium Rooftop Cafe &amp; Restaurant in Surat</title>
+<meta name="description" content="Unvind Cafe is a rooftop cafe and restaurant on City Light Road, Surat. Pizza, pasta, sushi, coffee and desserts, open daily till 1 AM. Book a table on WhatsApp.">
+<meta name="theme-color" content="#F5EFE2">
+<meta property="og:title" content="Unvind Cafe | Rooftop Cafe &amp; Restaurant, Surat">
+<meta property="og:description" content="Good food, beautiful views and unforgettable moments on City Light Road, Surat. Rated 4.6/5 by 2,915 guests on Google.">
+<meta property="og:type" content="restaurant">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2368703F'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23F5EFE2'%3EU%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Unvind Cafe","url":"https://unvindcafe.com","telephone":"+918141107070","priceRange":"₹400–₹1,400","servesCuisine":["Italian","Continental","Indian","Chinese","Cafe"],"address":{"@type":"PostalAddress","streetAddress":"6th Floor, Kalp Business Center, Above Iconic, City Light Road, Opposite Pantaloons","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395007","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"2915"}}
+</script>
+<style>
+:root{
+  --cream:#F5EFE2;
+  --paper:#FBF7EE;
+  --beige:#E8DCC4;
+  --ink:#272521;
+  --muted:#5E594D;
+  --olive:#68703F;
+  --olive-d:#4C5330;
+  --radius:18px;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --gap:clamp(64px,9vw,120px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,7vw,4.9rem)}
+h2{font-size:clamp(2rem,4.6vw,3.3rem)}
+h3{font-size:1.45rem}
+em{font-style:italic;color:var(--olive-d)}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding-block:var(--gap)}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--olive-d);margin-bottom:16px}
+.eyebrow svg{width:26px;height:26px;color:var(--olive)}
+.lead{color:var(--muted);font-size:1.08rem;max-width:56ch;margin-top:16px}
+:focus-visible{outline:3px solid var(--olive);outline-offset:3px;border-radius:6px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:.97rem;text-decoration:none;border:2px solid var(--olive);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-family:var(--sans);min-height:48px}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-fill{background:var(--olive);color:var(--cream)}
+.btn-fill:hover{background:var(--olive-d);border-color:var(--olive-d);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--olive-d)}
+.btn-line:hover{background:var(--olive);color:var(--cream);transform:translateY(-2px)}
+.btn-sm{padding:9px 16px;font-size:.88rem;min-height:40px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,239,226,.97);border-bottom:1px solid var(--beige)}
+.hbar{display:flex;align-items:center;gap:14px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.logo-mark{width:38px;height:38px;border-radius:50%;background:var(--olive);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.4rem}
+.logo-text{font-family:var(--serif);font-weight:700;font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase}
+nav.main{display:none}
+.hcta{display:flex;gap:8px}
+.hcta .btn span{display:none}
+.hcta .btn{padding:0;width:42px;height:42px;min-height:42px}
+.burger{width:42px;height:42px;border:2px solid var(--ink);border-radius:50%;background:none;cursor:pointer;display:grid;place-content:center;gap:5px}
+.burger i{display:block;width:18px;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{display:none;background:var(--paper);border-top:1px solid var(--beige)}
+.mnav.open{display:block}
+.mnav a{display:block;padding:15px 20px;text-decoration:none;font-weight:500;border-bottom:1px solid var(--beige)}
+
+/* hero */
+.hero{padding-block:48px 0;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:36px}
+.hero h1 em{display:block}
+.hero-copy .lead{font-size:1.15rem;color:var(--ink);max-width:36ch}
+.proof{display:flex;align-items:center;gap:10px;margin-top:18px;font-weight:500;color:var(--muted);font-size:.95rem;flex-wrap:wrap}
+.stars{display:inline-flex;gap:2px;color:var(--olive)}
+.stars svg{width:17px;height:17px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-visual{position:relative}
+.hero-img{border-radius:240px 240px var(--radius) var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--beige)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-leaf{position:absolute;right:-18px;top:-22px;width:110px;color:var(--olive);opacity:.9;transform:rotate(18deg)}
+.hero-badge{position:absolute;left:-6px;bottom:28px;background:var(--ink);color:var(--cream);border-radius:var(--radius);padding:14px 18px;max-width:210px;font-size:.9rem;line-height:1.4}
+.hero-badge b{font-family:var(--serif);font-size:1.5rem;display:block}
+
+/* trust */
+.trust{background:var(--ink);color:var(--cream);padding-block:44px;margin-top:-40px;position:relative;z-index:2}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 16px}
+.stat b{font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);display:block;line-height:1;color:var(--beige)}
+.stat span{font-size:.9rem;opacity:.85}
+
+/* services */
+.svc-head{display:flex;flex-direction:column;gap:6px;margin-bottom:44px}
+.svc-grid{display:grid;gap:16px}
+.card{background:var(--paper);border:1px solid var(--beige);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(39,37,33,.45)}
+.card .ico{width:46px;height:46px;border-radius:14px;background:var(--beige);color:var(--olive-d);display:grid;place-items:center}
+.card .ico svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--muted);font-size:.97rem;flex:1}
+.card .price{font-size:.85rem;font-weight:700;color:var(--olive-d);letter-spacing:.04em}
+.card.big{background:var(--olive);color:var(--cream);border-color:var(--olive)}
+.card.big p,.card.big .price{color:var(--beige)}
+.card.big .ico{background:rgba(245,239,226,.18);color:var(--cream)}
+.card.big .btn-line{border-color:var(--cream);color:var(--cream)}
+.card.big .btn-line:hover{background:var(--cream);color:var(--olive-d)}
+
+/* about */
+.about{background:var(--beige)}
+.about-grid{display:grid;gap:40px;align-items:start}
+.avatar-row{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--olive);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.6rem}
+.avatar-row small{color:var(--muted);display:block}
+.about p{margin-top:14px;color:var(--ink);max-width:58ch}
+.diff{list-style:none;display:grid;gap:12px}
+.diff li{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border-radius:var(--radius);padding:18px 20px}
+.diff svg{width:26px;height:26px;color:var(--olive);flex:none;margin-top:2px}
+.diff b{display:block;font-family:var(--serif);font-size:1.25rem}
+.diff span{color:var(--muted);font-size:.93rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:130px;gap:12px;margin-top:40px}
+.gal figure{border-radius:var(--radius);overflow:hidden;background:var(--beige);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:var(--cream);font-size:.78rem;font-weight:700;padding:4px 11px;border-radius:99px}
+.g1{grid-column:span 2;grid-row:span 2}
+.g2{grid-row:span 2}
+.g3{grid-row:span 1}
+.g4{grid-row:span 2}
+.g5{grid-row:span 1}
+.g6{grid-column:span 2;grid-row:span 1}
+.g7{grid-row:span 2}
+.g8{grid-row:span 1}
+.img-fail{background:linear-gradient(135deg,var(--beige),var(--paper))}
+.img-fail img{display:none}
+
+/* reviews */
+.rev-grid{display:grid;gap:18px;margin-top:40px}
+.score{background:var(--ink);color:var(--cream);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:8px}
+.score b{font-family:var(--serif);font-size:4.4rem;line-height:1}
+.score .stars{color:var(--beige)}
+.score .stars svg{width:22px;height:22px}
+.quote{background:var(--paper);border:1px solid var(--beige);border-radius:var(--radius);padding:26px}
+.quote .tag{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--olive-d)}
+.quote h3{margin:8px 0 8px}
+.quote p{color:var(--muted);font-size:.96rem}
+.revlink{margin-top:26px}
+
+/* pricing */
+.pricing{background:var(--paper)}
+.plist{list-style:none;margin-top:36px;border-top:2px solid var(--ink)}
+.plist li{display:grid;gap:6px;padding:20px 0;border-bottom:1px solid var(--beige);align-items:center}
+.plist h3{font-size:1.5rem}
+.plist p{color:var(--muted);font-size:.95rem}
+.plist a{font-weight:700;color:var(--olive-d);text-decoration:none;border-bottom:2px solid var(--olive);justify-self:start;padding-bottom:2px}
+.spend{display:inline-block;margin-top:22px;background:var(--beige);border-radius:99px;padding:10px 20px;font-weight:700}
+.note{color:var(--muted);font-size:.88rem;margin-top:16px}
+
+/* contact */
+.contact-grid{display:grid;gap:36px;margin-top:40px}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--beige);min-height:340px;background:var(--beige)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.info{display:grid;gap:26px}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;background:var(--paper);border-radius:var(--radius);padding:20px 22px;font-size:.95rem}
+.hours dt{font-weight:700}
+.hours dd{color:var(--muted);text-align:right}
+.hours small{grid-column:1/-1;color:var(--muted);margin-top:6px}
+.addr{font-style:normal;color:var(--muted)}
+.methods{display:flex;flex-wrap:wrap;gap:10px}
+form.book{background:var(--ink);color:var(--cream);border-radius:var(--radius);padding:26px;display:grid;gap:14px}
+form.book h3{color:var(--beige)}
+form.book label{display:grid;gap:6px;font-size:.85rem;font-weight:500}
+form.book input,form.book select{font:inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--muted);background:var(--cream);color:var(--ink);min-height:46px;width:100%}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form.book .btn{border-color:var(--cream);background:var(--cream);color:var(--olive-d)}
+form.book .btn:hover{background:var(--beige)}
+form.book small{opacity:.75;font-size:.8rem}
+
+/* footer */
+footer.site{background:var(--ink);color:var(--cream);padding-block:64px 100px;position:relative;overflow:hidden}
+.foot-grid{display:grid;gap:36px}
+.foot-name{font-family:var(--serif);font-size:2.4rem;font-weight:700;line-height:1}
+.foot-tag{margin-top:10px;color:var(--beige);font-style:italic;font-family:var(--serif);font-size:1.2rem}
+.flinks{list-style:none;display:grid;gap:8px}
+.flinks a{text-decoration:none;opacity:.85}
+.flinks a:hover{opacity:1;text-decoration:underline}
+.big-wa{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--olive);color:var(--cream);text-decoration:none;font-weight:700;font-size:1.15rem;padding:22px 26px;border-radius:var(--radius);transition:background .2s}
+.big-wa:hover{background:var(--olive-d)}
+.big-wa svg{width:28px;height:28px}
+.foot-bottom{margin-top:48px;padding-top:22px;border-top:1px solid #4a463d;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.88rem;opacity:.9}
+.credit{text-transform:none;letter-spacing:0}
+.foot-leaf{position:absolute;right:-30px;top:20px;width:170px;color:var(--olive);opacity:.35;transform:rotate(-20deg)}
+
+/* sticky mobile bar */
+.sbar{display:none}
+@media (max-width:768px){
+  .sbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .sbar .btn{min-height:50px}
+  .sbar .btn-line{border-color:var(--cream);color:var(--cream)}
+  .sbar .btn-fill{background:var(--olive);border-color:var(--olive)}
+}
+
+/* motion */
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-copy>*{animation:up .7s both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}
+.hero-copy>*:nth-child(3){animation-delay:.16s}
+.hero-copy>*:nth-child(4){animation-delay:.24s}
+.hero-copy>*:nth-child(5){animation-delay:.32s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* >=521px */
+@media (min-width:521px){
+  .hcta .btn span{display:inline}
+  .hcta .btn{width:auto;padding:9px 16px;height:auto}
+  .trust-grid{grid-template-columns:repeat(4,1fr)}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .card.big{grid-column:span 2}
+  .gal{grid-auto-rows:150px}
+  .plist li{grid-template-columns:1.1fr 1.6fr auto;gap:24px}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .score{grid-column:span 2}
+}
+/* >=821px */
+@media (min-width:821px){
+  .burger,.mnav{display:none!important}
+  nav.main{display:flex;gap:26px;margin-right:12px}
+  nav.main a{text-decoration:none;font-weight:500;font-size:.95rem}
+  nav.main a:hover{color:var(--olive)}
+  .hero{padding-top:70px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:end;gap:56px}
+  .hero-img{aspect-ratio:3/4;margin-right:calc((100vw - min(1180px,100vw - 40px)) / -2);border-top-right-radius:0;border-bottom-right-radius:0}
+  .hero-badge{left:-34px}
+  .svc-grid{grid-template-columns:repeat(4,1fr)}
+  .card.big{grid-column:span 2;grid-row:span 2;padding:34px}
+  .card.big h3{font-size:2rem}
+  .card.wide{grid-column:span 2}
+  .about-grid{grid-template-columns:1.1fr .9fr;gap:70px}
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:170px}
+  .g1{grid-column:span 2;grid-row:span 3}
+  .g6{grid-column:span 2}
+  .rev-grid{grid-template-columns:1fr 1fr 1fr}
+  .score{grid-column:auto;grid-row:span 1}
+  .contact-grid{grid-template-columns:1.1fr .9fr;align-items:start}
+  .foot-grid{grid-template-columns:1.3fr .7fr 1.2fr;align-items:center}
+  .svc-head{flex-direction:row;justify-content:space-between;align-items:end}
+}
+/* >=1081px */
+@media (min-width:1081px){
+  .hero-leaf{width:150px}
+  .trust{margin-top:-60px}
+}
+</style>
+</head>
+<body>
+
+<!-- Reusable olive-sprig motif -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sprig" viewBox="0 0 100 160">
+      <path d="M50 158C50 110 52 60 50 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <g fill="currentColor">
+        <path d="M50 30C36 28 28 18 26 6c14 2 24 10 24 24z"/>
+        <path d="M50 30C64 28 72 18 74 6c-14 2-24 10-24 24z"/>
+        <path d="M50 70C34 68 24 56 22 42c16 2 28 12 28 28z"/>
+        <path d="M50 70C66 68 76 56 78 42c-16 2-28 12-28 28z"/>
+        <path d="M50 112C32 110 20 96 18 80c18 2 32 14 32 32z"/>
+        <path d="M50 112C68 110 80 96 82 80c-18 2-32 14-32 32z"/>
+      </g>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.700-1.300a.5.5 0 0 0 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.57 3.600a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.500l3.200 3.200L17 8.800" fill="none" stroke="#F5EFE2" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site">
+  <div class="wrap hbar">
+    <a href="#top" class="logo" aria-label="Unvind Cafe home">
+      <span class="logo-mark">U</span>
+      <span class="logo-text">Unvind</span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Menu &amp; Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Prices</a>
+      <a href="#contact">Visit</a>
+    </nav>
+    <div class="hcta">
+      <a class="btn btn-line" href="tel:+918141107070" aria-label="Call Unvind Cafe"><svg><use href="#phone"/></svg><span>Call</span></a>
+      <a class="btn btn-fill" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20know%20more." aria-label="WhatsApp Unvind Cafe"><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i></button>
+  </div>
+  <div class="mnav" id="mnav">
+    <a href="#services">Menu &amp; Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Prices</a>
+    <a href="#contact">Visit &amp; Book a Table</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><svg><use href="#sprig"/></svg>Rooftop Cafe &amp; Restaurant · Surat</div>
+      <h1>Good food, <em>beautiful views.</em></h1>
+      <p class="lead">A relaxed rooftop café in the heart of Surat, serving coffee, pizza, sushi and desserts till 1 AM.</p>
+      <div class="proof">
+        <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <span>Rated 4.6/5 by 2,915 guests on Google</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-fill" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table." ><svg><use href="#wa"/></svg>Book Your Table</a>
+        <a class="btn btn-line" href="tel:+918141107070"><svg><use href="#phone"/></svg>Call Us</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="hero-leaf" aria-hidden="true"><use href="#sprig"/></svg>
+      <!-- Replace this photo with the real Unvind rooftop photo (e.g. images/rooftop.jpg) -->
+      <div class="hero-img"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&auto=format&fit=crop" alt="Bright cafe interior with warm wooden seating" width="900" height="1125" fetchpriority="high"></div>
+      <div class="hero-badge"><b>Open daily</b>Kitchen &amp; coffee bar close at 1:00 AM</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust" role="region" aria-label="Highlights">
+  <div class="wrap trust-grid">
+    <div class="stat"><b>4.6/5</b><span>Google rating</span></div>
+    <div class="stat"><b>2,915</b><span>Guest reviews</span></div>
+    <div class="stat"><b>₹400–1,400</b><span>Typical spend per person</span></div>
+    <div class="stat"><b>1 AM</b><span>Open late, every day</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <div class="eyebrow"><svg><use href="#sprig"/></svg>Menu &amp; Services</div>
+        <h2>Something for every <em>mood and table.</em></h2>
+      </div>
+      <p class="lead" style="margin-top:0">From a quiet coffee to a full birthday evening, tap any card to ask us on WhatsApp.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="card big">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4"/><path d="M2 20h20M5 16h14"/></svg></div>
+        <h3>Rooftop Dining</h3>
+        <p>Indoor and outdoor seating on the 6th floor, with greenery, soft lighting and an open Surat sky. Ask for an outdoor table when you book.</p>
+        <span class="price">Per person ₹400–₹1,400</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20book%20a%20rooftop%20table.%20Do%20you%20have%20outdoor%20seating%20available%3F">Book a rooftop table</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20h16v-7H4zM4 16c3 2 5-2 8 0s5-2 8 0M12 13V9M12 6v1"/></svg></div>
+        <h3>Birthday Celebrations</h3>
+        <p>Plan a birthday or small celebration with your people. Tell us the date and group size.</p>
+        <span class="price">Share your plan with us</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20am%20planning%20a%20birthday%20celebration.%20Could%20you%20share%20the%20details%3F">Plan a birthday</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.500"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M15 14c3-1 7 1 7 6"/></svg></div>
+        <h3>Group Dining</h3>
+        <p>Friends, college groups and family get-togethers, seated comfortably together.</p>
+        <span class="price">Reserve ahead for groups</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20reserve%20a%20table%20for%20a%20group.">Reserve for a group</a>
+      </article>
+
+      <article class="card wide">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.500 2.500 0 0 1 0 5h-2M7 3v3M11 3v3"/></svg></div>
+        <h3>Coffee &amp; Beverages</h3>
+        <p>Mocha, premium coffee, fresh juices and the Berry Shake. Stay for a slow afternoon or a late-night catch-up.</p>
+        <span class="price">See current drinks menu</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20could%20you%20share%20your%20coffee%20and%20beverages%20menu%3F">Ask for the drinks menu</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6c6-3 12-3 18 0L12 21zM9 10h.01M14 9h.01M12 14h.01"/></svg></div>
+        <h3>Italian &amp; Continental</h3>
+        <p>Farm Fresh Pizza, pasta, spaghetti and Avocado Toast.</p>
+        <span class="price">Priced on the live menu</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20could%20you%20share%20the%20Italian%20and%20Continental%20menu%3F">Ask for this menu</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12h18a9 9 0 0 1-18 0zM8 8c0-2 2-2 2-4M14 8c0-2 2-2 2-4"/></svg></div>
+        <h3>Indian, Chinese &amp; Sushi</h3>
+        <p>Biryani, Paneer Paratha with Paneer Subji, Garlic Rice with Cheese Sauce, Chipotle Bowl and Sushi.</p>
+        <span class="price">Priced on the live menu</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20could%20you%20share%20the%20Indian%2C%20Chinese%20and%20sushi%20menu%3F">Ask for this menu</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 11a5 5 0 0 1 10 0zM8 11l4 10 4-10"/></svg></div>
+        <h3>Desserts</h3>
+        <p>Tiramisu and other sweet endings to share, or not to share.</p>
+        <span class="price">Priced on the live menu</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20which%20desserts%20do%20you%20have%20today%3F">Ask about desserts</a>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 19C5 9 10 5 20 4c0 10-4 15-14 15zM5 19l8-8"/></svg></div>
+        <h3>Healthy Options</h3>
+        <p>Multiberries Smoothie Bowl and lighter plates for when you want something fresh.</p>
+        <span class="price">Priced on the live menu</span>
+        <a class="btn btn-line btn-sm" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20healthy%20options%20and%20smoothie%20bowls%20do%20you%20have%3F">Ask for healthy options</a>
+      </article>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-fill" href="https://unvindcafe.com" target="_blank" rel="noopener">Explore Our Menu</a>
+      <a class="btn btn-line" href="https://www.swiggy.com/search?query=Unvind%20Cafe%20Surat" target="_blank" rel="noopener">Order Online on Swiggy</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="avatar-row">
+        <div class="avatar" aria-hidden="true">UC</div>
+        <div><b>The Unvind Team</b><small>City Light Road, Surat</small></div>
+      </div>
+      <div class="eyebrow"><svg><use href="#sprig"/></svg>About Us</div>
+      <h2>A place to <em>slow down</em> above the city.</h2>
+      <!-- Owner: add your own story here (who started Unvind, which year, why) to make this section more personal. -->
+      <p>Unvind began with a simple idea: Surat should have a place where you can step out of the traffic, climb up to the 6th floor and simply relax. The name says it all.</p>
+      <p>We keep the space calm and green, with glass walls, warm wood and plenty of plants, so it works for a first coffee, a family lunch or a birthday that goes on past midnight.</p>
+      <p>The menu is wide on purpose. Pizza, sushi, biryani, smoothie bowls and tiramisu can all sit on one table, because that is how friends actually eat.</p>
+    </div>
+    <ul class="diff">
+      <li><svg><use href="#tick"/></svg><div><b>Rooftop on the 6th floor</b><span>Indoor and outdoor seating with open-air views.</span></div></li>
+      <li><svg><use href="#tick"/></svg><div><b>A menu that spans cuisines</b><span>Italian, Continental, Indian, Chinese, cafe snacks and desserts.</span></div></li>
+      <li><svg><use href="#tick"/></svg><div><b>Open late, every day</b><span>Doors stay open until 1:00 AM.</span></div></li>
+      <li><svg><use href="#tick"/></svg><div><b>Made for celebrations</b><span>Birthdays, group dinners and casual hangouts are welcome.</span></div></li>
+      <li><svg><use href="#tick"/></svg><div><b>Dine in or order home</b><span>Kerbside pickup, no-contact delivery and Swiggy ordering.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow"><svg><use href="#sprig"/></svg>Gallery</div>
+    <h2>Rooftop light, <em>good plates.</em></h2>
+    <!-- Replace every Unsplash photo below with real Unvind photos (interior, rooftop, dishes). -->
+    <div class="gal">
+      <figure class="g1"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop" alt="Warm restaurant interior with set tables"><figcaption>Dining room</figcaption></figure>
+      <figure class="g2"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop" alt="Cup of coffee on a cafe table"><figcaption>Coffee</figcaption></figure>
+      <figure class="g3"><img loading="lazy" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop" alt="Freshly baked pizza"><figcaption>Pizza</figcaption></figure>
+      <figure class="g4"><img loading="lazy" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&auto=format&fit=crop" alt="Cafe seating by large windows"><figcaption>Seating</figcaption></figure>
+      <figure class="g5"><img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&auto=format&fit=crop" alt="Slice of chocolate cake"><figcaption>Desserts</figcaption></figure>
+      <figure class="g6"><img loading="lazy" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop" alt="Evening restaurant ambiance with lights"><figcaption>Evenings</figcaption></figure>
+      <figure class="g7"><img loading="lazy" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&auto=format&fit=crop" alt="Stack of breakfast pancakes with berries"><figcaption>Brunch</figcaption></figure>
+      <figure class="g8"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop" alt="Plated dish served at a restaurant"><figcaption>From the kitchen</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="background:var(--beige)">
+  <div class="wrap">
+    <div class="eyebrow"><svg><use href="#sprig"/></svg>Guest Reviews</div>
+    <h2>Loved by <em>Surat.</em></h2>
+    <p class="lead">Thousands of guests have rated us on Google. Here is what they most often talk about.</p>
+    <!-- Owner: to show individual reviews here, copy real Google reviews (with the reviewer's permission) into the cards below. -->
+    <div class="rev-grid">
+      <div class="score">
+        <b>4.6</b>
+        <span class="stars" aria-label="4.6 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <span>from 2,915 Google reviews</span>
+      </div>
+      <div class="quote"><span class="tag">Guests often mention</span><h3>The ambiance</h3><p>The rooftop setting, greenery and soft lighting are what many people remember first.</p></div>
+      <div class="quote"><span class="tag">Guests often mention</span><h3>The variety</h3><p>Pizza, sushi, biryani, bowls and coffee on one menu, so everyone at the table finds something.</p></div>
+      <div class="quote"><span class="tag">Guests often mention</span><h3>The occasions</h3><p>Birthdays, date nights and group hangouts are a big part of why people come back.</p></div>
+    </div>
+    <div class="revlink"><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Unvind%20Cafe%20Surat" target="_blank" rel="noopener">Read all reviews on Google</a></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing">
+  <div class="wrap">
+    <div class="eyebrow"><svg><use href="#sprig"/></svg>Prices</div>
+    <h2>Simple, <em>honest pricing.</em></h2>
+    <span class="spend">Most guests spend ₹400–₹1,400 per person</span>
+    <ul class="plist">
+      <li><h3>Pizza &amp; Pasta</h3><p>Farm Fresh Pizza, pasta, spaghetti</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20pizza%20and%20pasta%3F">Ask today's price</a></li>
+      <li><h3>Rice, Bowls &amp; Indian</h3><p>Garlic Rice with Cheese Sauce, Chipotle Bowl, Biryani, Paneer Paratha with Paneer Subji</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20rice%20bowls%20and%20Indian%20dishes%3F">Ask today's price</a></li>
+      <li><h3>Sushi &amp; Snacks</h3><p>Sushi, French Fries, Avocado Toast</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20sushi%20and%20snacks%3F">Ask today's price</a></li>
+      <li><h3>Coffee &amp; Fresh Juices</h3><p>Mocha Coffee, premium coffee, fresh juices</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20coffee%20and%20juices%3F">Ask today's price</a></li>
+      <li><h3>Shakes &amp; Smoothie Bowls</h3><p>Berry Shake, Multiberries Smoothie Bowl</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20shakes%20and%20smoothie%20bowls%3F">Ask today's price</a></li>
+      <li><h3>Desserts</h3><p>Tiramisu and more</p><a href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20what%20are%20the%20current%20prices%20for%20desserts%3F">Ask today's price</a></li>
+    </ul>
+    <!-- Owner: replace "Ask today's price" with real item prices once confirmed. -->
+    <p class="note">Item prices change with the seasonal menu, so we share the latest on WhatsApp or on the menu at your table.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow"><svg><use href="#sprig"/></svg>Visit Us</div>
+    <h2>Come up and <em>unwind.</em></h2>
+    <div class="contact-grid">
+      <div class="map">
+        <iframe title="Map showing Unvind Cafe on City Light Road, Surat" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Unvind%20Cafe%2C%206th%20Floor%2C%20Kalp%20Business%20Center%2C%20Above%20Iconic%2C%20City%20Light%20Road%2C%20Opposite%20Pantaloons%2C%20Surat%2C%20Gujarat%20395007&output=embed"></iframe>
+      </div>
+      <div class="info">
+        <address class="addr"><b style="color:var(--ink)">Unvind Cafe</b><br>6th Floor, Kalp Business Center, Above Iconic, City Light Road, Opposite Pantaloons, Surat, Gujarat 395007</address>
+        <dl class="hours">
+          <dt>Monday to Sunday</dt><dd>Closes 1:00 AM</dd>
+          <small>Please call to confirm today's opening time before you visit.</small>
+        </dl>
+        <div class="methods">
+          <a class="btn btn-fill" href="tel:+918141107070"><svg><use href="#phone"/></svg>+91 81411 07070</a>
+          <a class="btn btn-line" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20have%20a%20question."><svg><use href="#wa"/></svg>WhatsApp</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=Unvind%20Cafe%20Surat" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+        <form class="book" id="bookForm">
+          <h3>Book Your Table</h3>
+          <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+          <div class="frow">
+            <label>Date<input type="date" name="date" required></label>
+            <label>Time<input type="time" name="time" required></label>
+          </div>
+          <div class="frow">
+            <label>Guests<select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10+</option></select></label>
+            <label>Seating<select name="seat"><option>Rooftop / outdoor</option><option>Indoor</option><option>No preference</option></select></label>
+          </div>
+          <button class="btn" type="submit"><svg><use href="#wa"/></svg>Send Request on WhatsApp</button>
+          <small>This opens WhatsApp with your details filled in. We confirm availability there.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <svg class="foot-leaf" aria-hidden="true"><use href="#sprig"/></svg>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-name">Unvind Cafe</div>
+        <p class="foot-tag">Good Food. Beautiful Views. Unforgettable Moments.</p>
+      </div>
+      <ul class="flinks">
+        <li><a href="#services">Menu &amp; Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Prices</a></li>
+        <li><a href="#contact">Visit &amp; Book</a></li>
+      </ul>
+      <a class="big-wa" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table."><svg><use href="#wa"/></svg>Chat with us on WhatsApp</a>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr">2026</span> Unvind Cafe, Surat. All rights reserved.</span>
+      <span class="credit">built with ❤️ by 21.coders</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sbar" role="navigation" aria-label="Quick contact">
+  <a class="btn btn-line" href="tel:+918141107070"><svg><use href="#phone"/></svg>Call</a>
+  <a class="btn btn-fill" href="https://wa.me/918141107070?text=Hi%20Unvind%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table."><svg><use href="#wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var burger = document.querySelector('.burger'), mnav = document.getElementById('mnav');
+  burger.addEventListener('click', function(){
+    var open = mnav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  mnav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ mnav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  document.querySelectorAll('.gal img, .hero-img img').forEach(function(img){
+    img.addEventListener('error', function(){ img.parentElement.classList.add('img-fail'); });
+  });
+
+  var form = document.getElementById('bookForm');
+  var d = form.elements['date'];
+  d.min = new Date().toISOString().split('T')[0];
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = form.elements;
+    var msg = 'Hi Unvind Cafe, I would like to book a table.\n' +
+      'Name: ' + f['name'].value + '\n' +
+      'Date: ' + f['date'].value + '\n' +
+      'Time: ' + f['time'].value + '\n' +
+      'Guests: ' + f['guests'].value + '\n' +
+      'Seating: ' + f['seat'].value + '\n' +
+      'Please confirm availability.';
+    window.location.href = 'https://wa.me/918141107070?text=' + encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>
